@@ -1,0 +1,18 @@
+#boxfooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.img{
+    width: 40px;
+    height: 40px;
+}
+.titulofooter{
+    font-family: 'Koulen';
+    font-size: 22px;
+}
+.infofooter{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+}

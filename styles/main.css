@@ -1,6 +1,7 @@
 main{
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 .photo-img{
     padding: 20px;

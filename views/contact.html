@@ -4,18 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CV Online</title>
+    <title>Contacto</title>
+    <link rel="stylesheet" href="/styles/footer.css" />
+    <link rel="stylesheet" href="/styles/navbar.css" />
+    <link rel="stylesheet" href="/styles/contact.css">
+    <link rel="stylesheet" href="/index.html" />
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
     </style>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
     </style>
-    <link rel="stylesheet" href="/styles/footer.css" />
-    <link rel="stylesheet" href="/styles/navbar.css" />
-    <link rel="stylesheet" href="/styles/main.css" />
   </head>
-  <body class="body">
+  <body>
     <nav>
       <div class="container">
         <div class="container-logo">
@@ -32,35 +33,34 @@
       </div>
     </nav>
     <main>
-      <div class="photo-img">
-        <img src="/images/Foto de perfil.png" alt="Foto perfil" />
+      <div>
+        <H2>Contacto</H2>
+        <p>Espero oir pronto de ti</p>
+        <h3>Telefono</h3>
+        <p>(959) 274-1299</p>
+        <h3>Email</h3>
+        <p>herminia.wade@example.com</p>
       </div>
-      <div class="main-div-container">
-        <h1>Hola</h1>
-        <h2>Un poco de mi</h2>
-        <h3>
-          Disfruto de mi trabajo, el diseño, branding, ilustracion y sobre todo:
-          creacion de motion graphics. No me considero especialmente curiosa
-          pero me gusta aprender cosas nuevas de diseño, el trabajo, new topics,
-          o simplemente mediante conversaciones.
-        </h3>
-        <div class="main-div-round">
-          <img
-            class="round"
-            src="/images/Curriculum circle.png"
-            alt="Curriculum circle"
-          />
-          <img
-            class="round"
-            src="/images/Proyecto circle.png"
-            alt="Proyectos circle"
-          />
-          <img
-            class="round"
-            src="/images/Contactos circle.png"
-            alt="Contactos circle"
-          />
-        </div>
+      <div>
+        <form action="index.html" autocomplete="off">
+          <div class="input-container">
+            <input type="text" name="name" class="input" />
+            <span>Nombre</span>
+          </div>
+          <div class="input-container">
+            <input type="email" name="email" class="input" />
+            <span>Email</span>
+          </div>
+          <div class="input-container">
+            <input type="tel" name="phone" class="input" />
+            <span>Telefono</span>
+          </div>
+          <div class="input-container textarea">
+            <textarea name="message" class="input"></textarea>
+            <span>Mensaje</span>
+          </div>
+          <input type="submit" value="Enviar" class="btn" />
+        </form>
       </div>
     </main>
     <footer id="boxfooter">
@@ -84,5 +84,6 @@
         </ul>
       </div>
     </footer>
+    <script src="/app/contact.js"></script>
   </body>
 </html>

@@ -1,0 +1,94 @@
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+main div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+main div h2{
+    font-family: 'Koulen';
+    font-size: 50px;
+    font-weight: bold
+}
+main div p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 22px;
+}
+main div h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+form{
+    padding: 2.3rem 2.2rem;
+    padding-top: 100px;
+    overflow: hidden;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+}
+.input-container{
+    position: relative;
+    margin: 1rem 0;
+    width: 400px;
+}
+.input{
+    width: 100%;
+    outline: none;
+    border: 2px solid black;
+    background: none;
+    padding: 0.6rem 1.2rem;
+    color: black;
+    font-weight: 400;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    border-radius: 25px;
+    transition: 0.3s;
+    font-family: 'Roboto', sans-serif;
+}
+textarea.input{
+    padding: 0.8rem 1.2rem;
+    min-height: 150px;
+    border-radius: 22px;
+    resize: none;
+    overflow-y: auto;
+}
+.input-container label{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    padding: 0 0.4rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+    pointer-events: none;
+    z-index: 1000;
+    transition: 0.5s;
+}
+.input-container.textarea label{
+    top: 1rem;
+    transform: translateY(0);
+}
+.btn{
+    padding: 0.6rem 1.3rem;
+    background-color: #EEA302;
+    border: 1px solid black;
+    font-size: 0.95rem;
+    color: black;
+    line-height: 1;
+    border-radius: 25px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.btn:hover{
+    background: aliceblue;
+    color: black;
+}

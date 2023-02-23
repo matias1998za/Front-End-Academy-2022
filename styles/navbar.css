@@ -31,6 +31,9 @@ body{
     font-weight: bold;
     font-size: 28px;
 }
+nav a{
+    text-decoration: none;
+}
 .links{
     display: flex;
     flex-direction: row;

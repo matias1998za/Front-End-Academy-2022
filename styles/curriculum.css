@@ -1,0 +1,35 @@
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10vh;
+    padding-right: 10vh;
+}
+main h1{
+    font-family: 'Koulen';
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 5%;
+}
+main h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+}
+main h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+main div li{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+hr{
+    width:80%;
+    text-align:center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}

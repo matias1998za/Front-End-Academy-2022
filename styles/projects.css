@@ -1,17 +1,31 @@
-main{
+main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-left: 10vh;
     padding-right: 10vh;
 }
-main h1{
+
+main h1 {
+    text-shadow:
+        0 1.2em #1095c1;
+    overflow: hidden;
+    transition: .3s;
+    line-height: 1.2em;
     font-family: 'Koulen';
     font-size: 50px;
     font-weight: bold;
     margin-top: 5%;
 }
-main h2{
+
+main h1:hover {
+    text-shadow:
+        0 -1.2em #000,
+        0 0 #1095c1;
+    color: #1095c1;
+}
+
+main h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,7 +34,8 @@ main h2{
     font-size: 35px;
     text-align: center;
 }
-main div{
+
+main div {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -29,12 +44,20 @@ main div{
     margin-top: 5%;
     margin-bottom: 5%;
 }
-main div img{
+
+main div img {
+    --f: 1;
+    transform: scale(var(--f));
+    transition: .5s;
     padding-left: 15%;
 }
-hr{
-    width:80%;
-    text-align:center;
+main div img:hover{
+    --f: 1.05;
+}
+
+hr {
+    width: 80%;
+    text-align: center;
     margin-top: 5%;
     margin-bottom: 5%;
 }

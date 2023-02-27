@@ -1,18 +1,16 @@
-const inputs = document.querySelectorAll(".input");
+let button = document.querySelector('.button');
+let buttonText = document.querySelector('.tick');
 
-function focusFunc() {
-  let parent = this.parentNode;
-  parent.classList.add("focus");
-}
+const tickMark = "<svg width=\"58\" height=\"58\" viewBox=\"0 0 58 45\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"#fff\" fill-rule=\"nonzero\" d=\"M19.11 44.64L.27 25.81l5.66-5.66 13.18 13.18L52.07.38l5.65 5.65\"/></svg>";
 
-function blurFunc() {
-  let parent = this.parentNode;
-  if (this.value == "") {
-    parent.classList.remove("focus");
+buttonText.innerHTML = "Enviar";
+
+button.addEventListener('click', function() {
+
+  if (buttonText.innerHTML !== "Enviar") {
+    buttonText.innerHTML = "Enviar";
+  } else if (buttonText.innerHTML === "Enviar") {
+    buttonText.innerHTML = tickMark;
   }
-}
-
-inputs.forEach((input) => {
-  input.addEventListener("focus", focusFunc);
-  input.addEventListener("blur", blurFunc);
+  this.classList.toggle('button__circle');
 });

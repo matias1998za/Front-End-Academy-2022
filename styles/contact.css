@@ -1,42 +1,61 @@
-main{
+main {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
-main div{
+
+main div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 10px;
 }
-main div h2{
+
+main div h2 {
+    text-shadow:
+        0 1.2em #1095c1;
+    overflow: hidden;
+    transition: .3s;
+    line-height: 1.2em;
     font-family: 'Koulen';
     font-size: 50px;
     font-weight: bold
 }
+
+main div h2:hover {
+    text-shadow:
+        0 -1.2em #000,
+        0 0 #1095c1;
+    color: #1095c1;
+}
+
 main div p {
     font-family: 'Roboto', sans-serif;
     font-weight: normal;
     font-size: 22px;
 }
+
 main div h3 {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     font-size: 25px;
 }
-form{
+
+form {
     padding: 2.3rem 2.2rem;
     padding-top: 100px;
     overflow: hidden;
     position: relative;
     font-family: 'Roboto', sans-serif;
 }
-.input-container{
+
+.input-container {
     position: relative;
     margin: 1rem 0;
     width: 400px;
 }
-.input{
+
+.input {
     width: 100%;
     outline: none;
     border: 2px solid black;
@@ -50,14 +69,16 @@ form{
     transition: 0.3s;
     font-family: 'Roboto', sans-serif;
 }
-textarea.input{
+
+textarea.input {
     padding: 0.8rem 1.2rem;
     min-height: 150px;
     border-radius: 22px;
     resize: none;
     overflow-y: auto;
 }
-.input-container label{
+
+.input-container label {
     position: absolute;
     top: 50%;
     left: 15px;
@@ -69,25 +90,42 @@ textarea.input{
     z-index: 1000;
     transition: 0.5s;
 }
-.input-container.textarea label{
+
+.input-container.textarea label {
     top: 1rem;
     transform: translateY(0);
 }
-.btn{
-    padding: 0.6rem 1.3rem;
-    background-color: #EEA302;
-    border: 1px solid black;
-    font-size: 0.95rem;
-    color: black;
-    line-height: 1;
-    border-radius: 25px;
-    outline: none;
-    cursor: pointer;
-    transition: 0.3s;
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
+
+.button {
+    width: 200px;
+    height: 80px;
+    background: #EEA302;
+    border-radius: 6px;
+    transition: all .3s cubic-bezier(0.67, 0.17, 0.40, 0.83);
 }
-.btn:hover{
-    background: aliceblue;
-    color: black;
+
+.button svg {
+    transform: rotate(180deg);
+    transition: all .5s;
+}
+
+.button__circle {
+    width: 120px;
+    height: 120px;
+    background: mediumseagreen;
+    border-radius: 50%;
+    transform: rotate(-180deg);
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.tick {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+    font-size: 2em;
+    transition: all .9s;
 }
